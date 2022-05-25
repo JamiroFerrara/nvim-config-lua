@@ -19,7 +19,6 @@ Plug 'prabirshrestha/async.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'sbdchd/neoformat' 
 
-Plug 'kyazdani42/nvim-web-devicons'
 
 Plug 'vimwiki/vimwiki'
 
@@ -35,5 +34,8 @@ Plug 'ap/vim-css-color'
 Plug 'tpope/vim-surround'
 
 Plug 'akinsho/toggleterm.nvim'
+
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 
 vim.call('plug#end')

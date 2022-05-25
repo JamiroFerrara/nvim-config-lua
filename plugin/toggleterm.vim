@@ -1,3 +1,3 @@
-lua require("toggleterm").setup{}
+lua require("toggleterm-config")
 
 nnoremap <leader>t :ToggleTerm<cr>
