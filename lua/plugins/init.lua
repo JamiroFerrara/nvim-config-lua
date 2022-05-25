@@ -34,4 +34,6 @@ Plug 'ap/vim-css-color'
 
 Plug 'tpope/vim-surround'
 
+Plug 'akinsho/toggleterm.nvim'
+
 vim.call('plug#end')
