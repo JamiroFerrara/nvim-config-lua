@@ -25,6 +25,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'yuezk/vim-js'
 
 Plug 'maxmellon/vim-jsx-pretty'
+Plug('prettier/vim-prettier', {['do'] = 'yarn install --frozen-lockfile --production'})
 Plug 'othree/yajs.vim'
 Plug 'alvan/vim-closetag'
 

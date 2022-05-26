@@ -8,7 +8,7 @@ map('v', '>', '>gv', {noremap = true, silent = false})
 map('v', 'y', 'myy`y', {noremap = true, silent = false})
 map('v', 'Y', 'myY`y', {noremap = true, silent = false})
 
-map('n', 'U', ':redo', {noremap = true, silent = false})
+map('n', 'U', ':redo<cr>', {noremap = true, silent = false})
 map('n', 'Y', 'y$', {noremap = true, silent = false})
 map('n', 'n', 'nzzzv', {noremap = true, silent = false})
 map('n', 'N', 'Nzzzv', {noremap = true, silent = false})
