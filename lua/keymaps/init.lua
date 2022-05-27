@@ -40,6 +40,7 @@ map('n', '<C-k>', '<C-w>k', {noremap = true, silent = false})
 map('n', '<C-l>', '<C-w>l', {noremap = true, silent = false})
 map('n', '<A-s>', ':vsp<cr>:sleep 50m<cr><C-o>', {noremap = true, silent = false})
 map('n', '<A-S>', ':sp<cr>:sleep 50m<cr><C-o>', {noremap = true, silent = false})
+map('n', '<leader>s', ':sp<cr>:sleep 50m<cr><C-o>', {noremap = true, silent = false})
 
 map('n', '<leader>m', ':lua require("harpoon.mark").add_file()<cr>', {noremap = true, silent = false})
 map('n', '<leader>M', ':lua require("harpoon.ui").toggle_quick_menu()<cr>', {noremap = true, silent = false})
@@ -55,3 +56,4 @@ map('n', '8', ':lua require("harpoon.ui").nav_file(8)<cr>', {noremap = true, sil
 map('n', '<C-s>', ':w<cr>', {noremap = true, silent = false})
 map('i', '<C-s>', '<esc>:w<cr>', {noremap = true, silent = false})
 map('', '<A-q>', ':q!<cr>', {noremap = true, silent = false})
+map('', '<leader>q', ':q!<cr>', {noremap = true, silent = false})
