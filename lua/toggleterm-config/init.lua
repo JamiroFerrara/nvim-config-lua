@@ -5,7 +5,7 @@ end
 
 toggleterm.setup({
 	size = 20,
-	open_mapping = [[<c-t>]],
+	open_mapping = [[<C-t>]],
 	hide_numbers = true,
 	shade_filetypes = {},
 	shade_terminals = true,
@@ -38,9 +38,11 @@ end
 
 vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
-local Terminal = require("toggleterm.terminal").Terminal
-local lazygit = Terminal:new({ cmd = "yarn, yarn start", hidden = true })
+local Terminal  = require('toggleterm.terminal').Terminal
+local start = Terminal:new({ cmd = "yarn start", hidden = true })
 
-function _LAZYGIT_TOGGLE()
-	lazygit:toggle()
+function _start_toggle()
+  start:toggle()
 end
+
+vim.api.nvim_set_keymap("n", "S", "<cmd>lua _start_toggle()<CR>", {noremap = true, silent = true})
