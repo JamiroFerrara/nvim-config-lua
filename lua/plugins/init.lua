@@ -26,6 +26,7 @@ Plug 'yuezk/vim-js'
 
 Plug 'maxmellon/vim-jsx-pretty'
 Plug('prettier/vim-prettier', {['do'] = 'yarn install --frozen-lockfile --production'})
+Plug('rodrigore/coc-tailwind-intellisense', {['do'] = 'npm install'})
 Plug 'othree/yajs.vim'
 Plug 'alvan/vim-closetag'
 
@@ -38,5 +39,7 @@ Plug 'akinsho/toggleterm.nvim'
 
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'pantharshit00/vim-prisma'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 vim.call('plug#end')

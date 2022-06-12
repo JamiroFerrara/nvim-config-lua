@@ -37,7 +37,8 @@ map('i', 'j0', '<esc>A<space>=<space>', {noremap = false, silent = false})
 
 map('i', ';;', '<esc>A;<esc>', {noremap = false, silent = false})
 
-map('', '<M-a>', ':NERDTree<cr>', {noremap = false, silent = false})
+map('', '<M-a>', ':NERDTreeFind<cr>', {noremap = false, silent = false})
+map('', '<M-n>', ':NERDTree<cr>', {noremap = false, silent = false})
 
 map('n', '<C-h>', '<C-w>h', {noremap = true, silent = false})
 map('n', '<C-j>', '<C-w>j', {noremap = true, silent = false})
@@ -45,8 +46,6 @@ map('n', '<C-k>', '<C-w>k', {noremap = true, silent = false})
 map('n', '<C-l>', '<C-w>l', {noremap = true, silent = false})
 map('n', '<A-s>', ':vsp<cr>:sleep 50m<cr><C-o>', {noremap = true, silent = false})
 map('n', '<A-S>', ':sp<cr>:sleep 50m<cr><C-o>', {noremap = true, silent = false})
-map('n', '<leader>s', ':vsp<cr>:sleep 50m<cr><C-o>', {noremap = true, silent = false})
-map('n', '<leader>a', '/(<enter>a', {noremap = true, silent = false})
 
 map('n', '<leader>m', ':lua require("harpoon.mark").add_file()<cr>', {noremap = true, silent = false})
 map('n', '<leader>M', ':lua require("harpoon.ui").toggle_quick_menu()<cr>', {noremap = true, silent = false})
@@ -66,3 +65,4 @@ map('i', '<C-s>', '<esc>:w<cr>', {noremap = true, silent = false})
 map('', '<A-q>', ':q!<cr>', {noremap = true, silent = false})
 map('n', '<leader>q', ':q!<cr>', {noremap = true, silent = false})
 
+map('n', '<leader>a', ':NERDTree<cr>', {noremap = true, silent = false})
