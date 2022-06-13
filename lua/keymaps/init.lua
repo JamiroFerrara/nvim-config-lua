@@ -66,3 +66,4 @@ map('', '<A-q>', ':q!<cr>', {noremap = true, silent = false})
 map('n', '<leader>q', ':q!<cr>', {noremap = true, silent = false})
 
 map('n', '<leader>a', ':NERDTree<cr>', {noremap = true, silent = false})
+map('n', '<C-n>', ':! touch ', {noremap = true, silent = false})
