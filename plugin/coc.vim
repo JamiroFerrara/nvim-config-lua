@@ -144,3 +144,4 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 "emmet
 let g:user_emmet_install_global = 1
+"test
