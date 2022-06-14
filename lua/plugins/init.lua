@@ -43,7 +43,7 @@ Plug 'pantharshit00/vim-prisma'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'terrortylor/nvim-comment'
 Plug 'lewis6991/gitsigns.nvim'
-Plug('akinsho/bufferline.nvim', {['tag'] = 'v2.*'})
+-- Plug('akinsho/bufferline.nvim', {['tag'] = 'v2.*'})
 Plug 'phaazon/hop.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 
