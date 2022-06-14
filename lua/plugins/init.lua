@@ -41,5 +41,6 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'pantharshit00/vim-prisma'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'terrortylor/nvim-comment'
 
 vim.call('plug#end')

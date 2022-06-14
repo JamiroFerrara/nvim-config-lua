@@ -1,5 +1,12 @@
 {
  "diagnostic.checkCurrentLine": true,
  "diagnostic.virtualText": true,
- "diagnostic.virtualTextCurrentLineOnly": false
+ "diagnostic.virtualTextCurrentLineOnly": false,
+  "languageserver": {
+      "csharp-ls": {
+        "command": "csharp-ls",
+        "filetypes": ["cs"],
+        "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
+      }
+  }
 }
