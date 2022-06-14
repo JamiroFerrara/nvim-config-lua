@@ -39,7 +39,7 @@ map('i', 'j0', '<esc>A<space>=<space>', {noremap = false, silent = false})
 map('i', ';;', '<esc>A;<esc>', {noremap = false, silent = false})
 
 map('', '<M-a>', ':NERDTreeFind<cr>', {noremap = false, silent = false})
-map('', '<M-n>', ':NERDTree<cr>', {noremap = false, silent = false})
+map('', '<M-z>', ':NERDTree<cr>', {noremap = false, silent = false})
 
 map('n', '<C-h>', '<C-w>h', {noremap = true, silent = false})
 map('n', '<C-j>', '<C-w>j', {noremap = true, silent = false})
@@ -67,4 +67,3 @@ map('', '<A-q>', ':q!<cr>', {noremap = true, silent = false})
 map('n', '<leader>q', ':q!<cr>', {noremap = true, silent = false})
 
 map('n', '<leader>a', ':NERDTree<cr>', {noremap = true, silent = false})
-map('n', '<C-n>', ':! touch ', {noremap = true, silent = false})
