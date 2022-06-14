@@ -41,7 +41,7 @@ vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 local Terminal  = require('toggleterm.terminal').Terminal
 local start = Terminal:new({ cmd = "yarn start", hidden = true })
 local gitpull = Terminal:new({ cmd = "git pull", hidden = true })
-local gitcommit = Terminal:new({ cmd = "git commit -a -m 'Update'; git push", hidden = true })
+local gitcommit = Terminal:new({ cmd = "git add *; git commit -m 'Update'; git push", hidden = true })
 
 function _start_toggle()
   start:toggle()
