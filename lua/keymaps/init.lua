@@ -19,6 +19,7 @@ map('n', 'L', 'J', {noremap = true, silent = false})
 
 map('n', 'f', '/', {noremap = true, silent = false})
 map('n', 'F', '?', {noremap = true, silent = false})
+map('n', '<leader>f', ':HopWord<cr>', {noremap = true, silent = false})
 map('n', '<leader>d', '"ryiw/<C-r>r<cr>', {noremap = true, silent = false})
 
 map('i', 'jj', '<esc>:w<cr>', {noremap = false, silent = false})

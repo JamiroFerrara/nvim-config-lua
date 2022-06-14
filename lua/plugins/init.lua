@@ -42,5 +42,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'pantharshit00/vim-prisma'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'terrortylor/nvim-comment'
+Plug 'lewis6991/gitsigns.nvim'
+Plug('akinsho/bufferline.nvim', {['tag'] = 'v2.*'})
+Plug 'phaazon/hop.nvim'
 
 vim.call('plug#end')
