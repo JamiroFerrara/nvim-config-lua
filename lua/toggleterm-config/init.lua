@@ -4,12 +4,12 @@ if not status_ok then
 end
 
 toggleterm.setup({
-	size = 20,
+	size = 10,
 	open_mapping = [[<C-t>]],
 	hide_numbers = true,
 	shade_filetypes = {},
 	shade_terminals = true,
-	shading_factor = 2,
+	shading_factor = 5,
 	start_in_insert = true,
 	insert_mappings = true,
 	persist_size = true,
@@ -42,8 +42,8 @@ local Terminal  = require('toggleterm.terminal').Terminal
 local start = Terminal:new({ cmd = "yarn start", hidden = true })
 local gitpull = Terminal:new({ cmd = "git pull", hidden = true })
 local gitcommit = Terminal:new({ cmd = "git add *; git commit -m 'Update'; git push", hidden = true })
-local builddebug = Terminal:new({ cmd = "msbuild /p:Configuration=debug", hidden = true })
-local buildrelease = Terminal:new({ cmd = "msbuild /p:Configuration=release", hidden = true })
+local builddebug = Terminal:new({ cmd = "pwsh -Command 'debug; exit'", hidden = true })
+local buildrelease = Terminal:new({ cmd = "pwsh -Command 'build; exit'", hidden = true })
 
 function _start_toggle()
   start:toggle()
