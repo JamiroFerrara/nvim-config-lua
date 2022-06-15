@@ -46,5 +46,6 @@ Plug 'lewis6991/gitsigns.nvim'
 -- Plug('akinsho/bufferline.nvim', {['tag'] = 'v2.*'})
 Plug 'phaazon/hop.nvim'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'lewis6991/impatient.nvim'
 
 vim.call('plug#end')
