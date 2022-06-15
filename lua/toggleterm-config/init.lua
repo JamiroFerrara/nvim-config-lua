@@ -42,6 +42,8 @@ local Terminal  = require('toggleterm.terminal').Terminal
 local start = Terminal:new({ cmd = "yarn start", hidden = true })
 local gitpull = Terminal:new({ cmd = "git pull", hidden = true })
 local gitcommit = Terminal:new({ cmd = "git add *; git commit -m 'Update'; git push", hidden = true })
+local builddebug = Terminal:new({ cmd = "msbuild /p:Configuration=debug", hidden = true })
+local buildrelease = Terminal:new({ cmd = "msbuild /p:Configuration=release", hidden = true })
 
 function _start_toggle()
   start:toggle()
@@ -55,6 +57,17 @@ function _gitcommit_toggle()
   gitcommit:toggle()
 end
 
+function _builddebug_toggle()
+  builddebug:toggle()
+end
+
+function _buildrelease_toggle()
+  buildrelease:toggle()
+end
+
 vim.api.nvim_set_keymap("n", "S", "<cmd>lua _start_toggle()<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "P", "<cmd>lua _gitpull_toggle()<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "C", "<cmd>lua _gitcommit_toggle()<CR>", {noremap = true, silent = true})
+
+vim.api.nvim_set_keymap("n", "B", "<cmd>lua _buildrelease_toggle()<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "D", "<cmd>lua _builddebug_toggle()<CR>", {noremap = true, silent = true})
