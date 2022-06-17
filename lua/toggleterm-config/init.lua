@@ -73,7 +73,7 @@ end
 vim.api.nvim_set_keymap("n", "S", "<cmd>lua _start_toggle()<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "P", "<cmd>lua _gitpull_toggle()<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "C", "<cmd>lua _gitcommit_toggle()<CR>", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "G", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<C-g>", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
 
 vim.api.nvim_set_keymap("n", "B", "<cmd>lua _buildrelease_toggle()<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "D", "<cmd>lua _builddebug_toggle()<CR>", {noremap = true, silent = true})
