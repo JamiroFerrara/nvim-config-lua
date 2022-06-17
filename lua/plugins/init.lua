@@ -47,5 +47,6 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'phaazon/hop.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'lewis6991/impatient.nvim'
+Plug 'OmniSharp/omnisharp-vim'
 
 vim.call('plug#end')
