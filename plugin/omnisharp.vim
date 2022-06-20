@@ -41,6 +41,7 @@
 "set completeopt=menuone,noinsert,noselect,popuphidden
 "set completepopup=highlight:Pmenu,border:off
 
+filetype on
 augroup ColorschemePreferences
   autocmd!
 " Link ALE sign highlights to similar equivalents without background colours
@@ -48,6 +49,9 @@ augroup ColorschemePreferences
   autocmd ColorScheme * highlight link ALEWarningSign ModeMsg
   autocmd ColorScheme * highlight link ALEInfoSign    Identifier
 augroup END
+
+" Xaml
+au BufNewFile,BufRead *.xaml        setf xml
 
 " ALE: {{{
 let g:ale_sign_error = ''
