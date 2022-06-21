@@ -46,7 +46,7 @@ local gitcommit = Terminal:new({ cmd = "git add *; git commit -m 'Update'; git p
 local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
 local builddebug = Terminal:new({ cmd = "debug", hidden = true })
 local buildrelease = Terminal:new({ cmd = "build", hidden = true })
-local cheatsh = Terminal:new({ cmd = "pwsh -Command cheat", hidden = true })
+local cheatsh = Terminal:new({ cmd = "pwsh -Command cheat_nvim", hidden = true })
 
 function _start_toggle()
   start:toggle()
@@ -84,4 +84,4 @@ vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", {nor
 vim.api.nvim_set_keymap("n", "<C-B>", "<cmd>lua _buildrelease_toggle()<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<C-D>", "<cmd>lua _builddebug_toggle()<CR>", {noremap = true, silent = true})
 
-vim.api.nvim_set_keymap("n", "<C-H>", "<cmd>lua _cheat_toggle()<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "H", "<cmd>lua _cheat_toggle()<CR>", {noremap = true, silent = true})
