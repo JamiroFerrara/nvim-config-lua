@@ -52,6 +52,8 @@ augroup END
 
 " Xaml
 au BufNewFile,BufRead *.xaml        setf xml
+au BufNewFile,BufRead *.cs set tabstop=4 
+au BufNewFile,BufRead *.cs set shiftwidth=4 
 
 " ALE: {{{
 let g:ale_sign_error = ''
