@@ -70,7 +70,7 @@ map('i', '<C-s>', '<esc>:w<cr>', {noremap = true, silent = false})
 map('', '<A-q>', ':q!<cr>', {noremap = true, silent = false})
 map('n', '<leader>q', ':q!<cr>', {noremap = true, silent = false})
 
-map('n', '<leader>a', '/(<cr>/)<cr>?(<cr>wa', {noremap = true, silent = false})
+map('n', '<leader>a', '/(<cr>/)<cr>?(<cr>a', {noremap = true, silent = false})
 map('i', '§', '`', {noremap = true, silent = false})
 map('n', '0', '^', {noremap = true, silent = false})
 map('n', "'", '$', {noremap = true, silent = false})
