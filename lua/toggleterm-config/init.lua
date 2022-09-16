@@ -16,7 +16,7 @@ toggleterm.setup({
 	direction = "float",
 	close_on_exit = true,
 	-- shell = "pwsh",
-	shell = vim.o.shell,
+	-- shell = vim.o.shell,
 	float_opts = {
 		border = "curved",
 		winblend = 0,
@@ -44,8 +44,8 @@ local start = Terminal:new({ cmd = "yarn start", hidden = true })
 local gitpull = Terminal:new({ cmd = "git pull", hidden = true })
 local gitcommit = Terminal:new({ cmd = "git add *; git commit -m 'Update'; git push", hidden = true })
 local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
-local builddebug = Terminal:new({ cmd = "debug", hidden = true })
-local buildrelease = Terminal:new({ cmd = "build", hidden = true })
+local builddebug = Terminal:new({ cmd = "pwsh -Command debug", hidden = true })
+local buildrelease = Terminal:new({ cmd = "pwsh -Command build", hidden = true })
 local cheatsh = Terminal:new({ cmd = "pwsh -Command cheat_nvim", hidden = true })
 
 function _start_toggle()
